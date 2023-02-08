@@ -7,7 +7,7 @@ from src.utils.common import read_yaml, create_directories
 import random
 
 
-STAGE = "TEMPLATE" ## <<< change stage name 
+STAGE = "STAGE_NAME" ## <<< change stage name 
 
 logging.basicConfig(
     filename=os.path.join("logs", 'running_logs.log'), 
@@ -22,7 +22,6 @@ def main(config_path, params_path):
     config = read_yaml(config_path)
     params = read_yaml(params_path)
     pass
-
 
 if __name__ == '__main__':
     args = argparse.ArgumentParser()
